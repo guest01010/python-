@@ -1,3 +1,10 @@
-year = int(input("enter une annee :"))
-est_bissextile = (year % 4 == 0 and (year % 100 != 0 or year % 400 == 0))
-print (est_bissextile)
+cont = 0
+for year in range (2026):
+
+    est_bissextile = (year % 4 == 0 and (year % 100 != 0 or year % 400 == 0))
+
+    if est_bissextile:
+        cont += 1
+print (cont)
+
+
